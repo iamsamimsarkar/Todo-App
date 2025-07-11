@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3a8ef6">
+  <title>Todo App - Samim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section id="input">
+      <input type="text" class="form-control" id="task-input" placeholder="Add a new task">
+      <div>
+        <a class="active" data-tab="#all">All</a>
+        <a data-tab="#pending">Pending</a>
+        <a data-tab="#completed">Completed</a>
+        <button class="clear-btn">Clear All</button>
+      </div>
+    </section>
+    <section id="task-content">
+      <ul class="list-group active" id="all"></ul>
+      <ul class="list-group" id="pending"></ul>
+      <ul class="list-group" id="completed"></ul>
+    </section>
+  </div>
+  <script src="indexedDB.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
